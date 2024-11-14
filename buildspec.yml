@@ -1,0 +1,26 @@
+version: 0.2
+
+  phases:
+    inatall: 
+      runtime-version:
+        nodejs: 20
+      comands:
+        -echo Instalando dependencias
+        -npm install
+    build:
+      comandos:
+        -echo creando el paquete de dependencia
+        -npm run build
+    post_build:
+      comands:
+        -echo copiar los archivos que me genero
+        -cp -r scripts dist/curso-aws/browser/
+        -cp appspec.yml dist/curso-aws/browser/
+  artifacs:
+    files:
+      -´scrips/**/*´
+      -´appspec.yml´
+      -´ **/*´
+   base-directory: ./dist/curso-aws/browser/
+
+    
