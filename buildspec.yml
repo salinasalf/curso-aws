@@ -2,7 +2,7 @@ version: 0.2
 
   phases:
     inatall: 
-      runtime-version:
+      runtime-versions:
         nodejs: 20
       comands:
         -echo Instalando dependencias
