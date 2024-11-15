@@ -22,6 +22,6 @@ artifacts:
     - 'scripts/**/*'
     - 'appspec.yml'
     - '**/*'
- base-directory: ./dist/curso-aws/browser/
+  base-directory: ./dist/curso-aws/browser/
 
     
